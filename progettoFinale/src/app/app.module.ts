@@ -12,12 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpInterceptorInterceptor } from './http-interceptor.interceptor';
 import { TabClientiComponent } from './tab-clienti/tab-clienti.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
-import { AddClienteComponent } from './add-cliente/add-cliente.component';
 import { EditPersoneComponent } from './edit-persone/edit-persone.component';
-import { TabComuniComponent } from './tab-comuni/tab-comuni.component';
-import { DettaglioComuniComponent } from './dettaglio-comuni/dettaglio-comuni.component';
-import { TabProvinceComponent } from './tab-province/tab-province.component';
-import { DettaglioProvinceComponent } from './dettaglio-province/dettaglio-province.component';
+import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
 
 
 @NgModule({
@@ -28,12 +24,8 @@ import { DettaglioProvinceComponent } from './dettaglio-province/dettaglio-provi
     FooterComponent,
     TabClientiComponent,
     DettaglioClienteComponent,
-    AddClienteComponent,
     EditPersoneComponent,
-    TabComuniComponent,
-    DettaglioComuniComponent,
-    TabProvinceComponent,
-    DettaglioProvinceComponent
+    AddNuovoComponent
   ],
   imports: [
     BrowserModule,

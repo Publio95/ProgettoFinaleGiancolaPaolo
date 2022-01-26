@@ -2,6 +2,7 @@ import { IndirizzoSedeLegale } from "./indirizzo-sede-legale";
 import { IndirizzoSedeOperativa } from "./indirizzo-sede-operativa";
 
 export class Clienti {
+        // static count = 5000;
 
         id?: number;
         ragioneSociale!: string;
@@ -15,15 +16,16 @@ export class Clienti {
         telefonoContatto!: string;
         emailContatto!: string;
         indirizzoSedeOperativa!: IndirizzoSedeOperativa;
-        indirizzoSedeLegale!: IndirizzoSedeLegale
+        indirizzoSedeLegale!: IndirizzoSedeLegale;
         dataInserimento!: string;
         dataUltimoContatto!: string;
+        fatturatoAnnuale?: null;
         
 
         constructor() {
-                
-                this.indirizzoSedeOperativa = new IndirizzoSedeOperativa;
-                this.indirizzoSedeLegale = new IndirizzoSedeLegale;
+               // this.id = Clienti.count++;
+                this.indirizzoSedeOperativa = new IndirizzoSedeOperativa();
+                this.indirizzoSedeLegale = new IndirizzoSedeLegale();
                 this.dataInserimento = "2019-06-01T08:11:01.911+00:00";
                 this.dataUltimoContatto = "2021-03-24T21:32:06.375+00:00";
 

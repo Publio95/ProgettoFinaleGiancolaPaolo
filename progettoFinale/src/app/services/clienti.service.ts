@@ -37,7 +37,7 @@ modificaCliente(item: Clienti){
   return this.http.put<Clienti>(environment.clienteDettaglio + item.id, item)
 }
 
-eliminaCliente(id: number){
+eliminaCliente(id: number | undefined){
   return this.http.delete(environment.clienteDettaglio + id)
 }
 
