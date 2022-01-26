@@ -3,18 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
- 
 
-  clienti : "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,DESC",
-  fatture : "http://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,ASC", 
-  statoFatture : "http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
+
+  clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,DESC",
+  fatture: "http://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,ASC",
+  statoFatture: "http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
   province: "http://epicode.online/epicodebeservice_v2/api/province?page=0&size=20&sort=id,ASC",
   comuni: "http://epicode.online/epicodebeservice_v2/api/comuni?page=0&size=20&sort=id,ASC",
-
+  provinceDettaglio: "http://epicode.online/epicodebeservice_v2/api/province/",
   clienteDettaglio: "http://epicode.online/epicodebeservice_v2/api/clienti/",
-  clienteAdd: "https://epicode.online/epicodebeservice_v2/api/clienti",
+  clienteAdd: "http://epicode.online/epicodebeservice_v2/api/clienti",
   tipiCliente: "http://epicode.online/epicodebeservice_v2/api/clienti/tipicliente",
- production: false
+  comuniDettaglio: "http://epicode.online/epicodebeservice_v2/api/comuni/",
+
+  production: false
 };
 
 /*

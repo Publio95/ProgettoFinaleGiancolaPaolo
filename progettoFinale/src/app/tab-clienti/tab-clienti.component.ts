@@ -22,10 +22,10 @@ export class TabClientiComponent implements OnInit {
   dettaglioCliente(item: Clienti){
     this.router.navigate(['clienti/detail/', item.id])
   }
-elimina(item: Clienti){
-  this.clientiService.eliminaCliente(item.id).subscribe(data => {
-    console.log(data)
-  })
-}
+//elimina(item: Clienti){
+//  this.clientiService.eliminaCliente(item.id).subscribe(data => {
+//    console.log(data)
+//  })
+//}
 
 }

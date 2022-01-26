@@ -21,8 +21,8 @@
         <td>{{item.dataInserimento}}</td>
         <td>{{item.dataUltimoContatto}}</td>
         <td>
-          <button type="button" class="btn btn-danger btn-small mx-1" (click)="elimina(item)"><i class="bi bi-trash" ></i></button>
-            <button type="button" class="btn btn-primary btn-small mx-1" ><i class="bi bi-zoom-in" (click)="dettaglioCliente(item)" ></i></button>
+          <button type="button" class="btn btn-danger btn-small mx-1" ><i class="bi bi-trash" ></i></button>
+            <button type="button" class="btn btn-primary btn-small mx-1" ((click)="dettaglioCliente(item)")><i class="bi bi-zoom-in"></i></button>
             </td>
       </tr>
     </tbody>

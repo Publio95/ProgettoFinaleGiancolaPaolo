@@ -2,7 +2,7 @@ import { StringLiteralLike } from "typescript";
 import { Comune } from "./comune"
 
 export class IndirizzoSedeLegale {
-    id!: number;
+    id?: number;
     via!: string;
     civico!: string;
     cap!: string;
@@ -10,6 +10,7 @@ export class IndirizzoSedeLegale {
     comune!: Comune;
 
     constructor(){
+        
         this.comune = new Comune
     }
 }

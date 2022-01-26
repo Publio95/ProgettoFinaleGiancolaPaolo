@@ -2,7 +2,7 @@ import { Provincia } from "./provincia";
 
 export class Comune {
 
-    id!: number;
+    id?: number;
     nome!: string;
     provincia!: Provincia;
 

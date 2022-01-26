@@ -14,6 +14,10 @@ import { TabClientiComponent } from './tab-clienti/tab-clienti.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
 import { AddClienteComponent } from './add-cliente/add-cliente.component';
 import { EditPersoneComponent } from './edit-persone/edit-persone.component';
+import { TabComuniComponent } from './tab-comuni/tab-comuni.component';
+import { DettaglioComuniComponent } from './dettaglio-comuni/dettaglio-comuni.component';
+import { TabProvinceComponent } from './tab-province/tab-province.component';
+import { DettaglioProvinceComponent } from './dettaglio-province/dettaglio-province.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { EditPersoneComponent } from './edit-persone/edit-persone.component';
     TabClientiComponent,
     DettaglioClienteComponent,
     AddClienteComponent,
-    EditPersoneComponent
+    EditPersoneComponent,
+    TabComuniComponent,
+    DettaglioComuniComponent,
+    TabProvinceComponent,
+    DettaglioProvinceComponent
   ],
   imports: [
     BrowserModule,
