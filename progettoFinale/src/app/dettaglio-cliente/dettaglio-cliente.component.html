@@ -1,0 +1,11 @@
+<div class="card text-white bg-dark mb-3" >
+    <div class="card-header display-4">{{cliente.nomeContatto}} {{cliente.cognomeContatto}}</div>
+    <div class="card-body">
+        <h5 class="card-title">Contatti telefono: {{cliente.telefono}} // {{cliente.telefonoContatto}}</h5>
+        <h5 class="card-title">Contatti email: {{cliente.email}} // {{cliente.emailContatto}}</h5>
+        <h5 class="card-title">Pec: {{cliente.pec}}</h5>
+        <h5 class="card-title">Indirizzo sede operativa: {{cliente.indirizzoSedeOperativa.via}}</h5>
+        <h5 class="card-title">Indirizzo sede legale: {{cliente.indirizzoSedeLegale.via}}</h5>
+        <button type="button" class="btn btn-warning btn-small mx-1" (click)="modifica(cliente)"><i class="bi bi-pen">Modifica</i></button>
+    </div>
+  </div>

@@ -1,0 +1,36 @@
+<form>
+    <div class="form-group">
+        <label for="nomeContatto">Nome</label>
+        <input type="text" [(ngModel)]="cliente.nomeContatto" name="nomeContatto" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <input type="text" [(ngModel)]="cliente.telefono" name="telefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="telefonoContatto">telefono Titolare</label>
+        <input type="text" [(ngModel)]="cliente.telefonoContatto" name="telefonoContatto" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" [(ngModel)]="cliente.email" name="email" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label for="emailContatto">Email Titolare</label>
+        <input type="email" [(ngModel)]="cliente.emailContatto" name="emailContatto" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label for="pec">Pec</label>
+        <input type="email" [(ngModel)]="cliente.pec" name="pec" class="form-control" >
+    </div>
+    
+    <div class="form-group">
+        <label for="partitaIva">Partita Iva</label>
+        <input type="text" [(ngModel)]="cliente.partitaIva" name="partitaIva" class="form-control">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-success" (click)="salva()" >Salva</button>
+    </div>
+</form>
