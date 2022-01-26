@@ -10,11 +10,21 @@ export const environment = {
   statoFatture: "http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
   province: "http://epicode.online/epicodebeservice_v2/api/province?page=0&size=20&sort=id,ASC",
   comuni: "http://epicode.online/epicodebeservice_v2/api/comuni?page=0&size=20&sort=id,ASC",
+ 
   provinceDettaglio: "http://epicode.online/epicodebeservice_v2/api/province/",
+  provinceAdd:"http://epicode.online/epicodebeservice_v2/api/province/",
+ 
   clienteDettaglio: "http://epicode.online/epicodebeservice_v2/api/clienti/",
   clienteAdd: "http://epicode.online/epicodebeservice_v2/api/clienti",
+ 
   tipiCliente: "http://epicode.online/epicodebeservice_v2/api/clienti/tipicliente",
+ 
   comuniDettaglio: "http://epicode.online/epicodebeservice_v2/api/comuni/",
+  comuneAdd: "http://epicode.online/epicodebeservice_v2/api/comuni/",
+ 
+ 
+  fattureDettaglio: "http://epicode.online/epicodebeservice_v2/api/fatture/",
+  fattureAdd: "http://epicode.online/epicodebeservice_v2/api/fatture",
 
   production: false
 };

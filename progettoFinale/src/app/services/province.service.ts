@@ -19,4 +19,9 @@ export class ProvinceService {
     return this.http.get<Provincia>(environment.provinceDettaglio + id)
 
   }
+
+  creaProvincia(item: Provincia){
+    return this.http.post<Provincia>(environment.provinceAdd, item)
+  }
+  
 }

@@ -39,4 +39,8 @@ aggiungi(){
   this.router.navigate(['clienti'])
 }
 
+
+addProvincia(){
+  this.router.navigate(['addProvincia'])
+}
 }

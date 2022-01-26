@@ -1,0 +1,30 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Email</th>
+        <th scope="col">Data Inserimento</th>
+        <th scope="col">Data Ultimo Contatto</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of fatture; index as i">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{item.data}}</td>
+        <td>{{item.numero}}</td>
+        <td>{{item.anno}}</td>
+        <td>{{item.importo}}</td>
+        <td>{{item.stato.stato}}</td>
+        <td>{{item.cliente.cognomeContatto}}</td>
+        <td>
+          <button type="button" class="btn btn-danger btn-small mx-1" (click)="elimina(item)"><i class="bi bi-trash"></i></button>
+          <button type="button" class="btn btn-primary btn-small mx-1" (click)="dettaglioFattura(item)"><i
+              class="bi bi-zoom-in"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

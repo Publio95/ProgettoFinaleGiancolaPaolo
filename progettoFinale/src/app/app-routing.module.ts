@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddComuneComponent } from './add-comune/add-comune.component';
 import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
+import { AddProvinciaComponent } from './add-provincia/add-provincia.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
 import { EditPersoneComponent } from './edit-persone/edit-persone.component';
 import { HomeComponent } from './home/home.component';
 import { TabClientiComponent } from './tab-clienti/tab-clienti.component';
+import { TabFattureComponent } from './tab-fatture/tab-fatture.component';
 
 const routes: Routes = [
   {
@@ -27,6 +30,18 @@ const routes: Routes = [
     path: "addClienti",
     component: AddNuovoComponent
   },
+  {
+    path: "addProvincia",
+    component: AddProvinciaComponent
+  },
+  {
+    path: "addComune",
+    component: AddComuneComponent
+  },
+  {
+    path: "fatture",
+    component: TabFattureComponent
+  }
  
 ];
 

@@ -20,6 +20,11 @@ export class ComuniService {
 
   }
 
+  creaComune(item: Comune){
+    return this.http.post<Comune>(environment.comuneAdd, item)
+  }
+  
+
 }
 
 
