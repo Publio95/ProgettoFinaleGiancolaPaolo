@@ -20,6 +20,7 @@ import { TabFattureComponent } from './tab-fatture/tab-fatture.component';
 import { AddFatturaComponent } from './add-fattura/add-fattura.component';
 import { FattureClienteComponent } from './fatture-cliente/fatture-cliente.component';
 import { Detailfatture2Component } from './detailfatture2/detailfatture2.component';
+import { EditFattureComponent } from './edit-fatture/edit-fatture.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { Detailfatture2Component } from './detailfatture2/detailfatture2.compone
     AddFatturaComponent,
     FattureClienteComponent,
     Detailfatture2Component,
+    EditFattureComponent,
   ],
   imports: [
     BrowserModule,

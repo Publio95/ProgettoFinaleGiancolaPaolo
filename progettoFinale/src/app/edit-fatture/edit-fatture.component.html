@@ -1,0 +1,25 @@
+<form>
+    <div class="form-group">
+        <label for="importo">Importo</label>
+        <input type="text" [(ngModel)]="fatture.importo" name="importo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="dataFattura">Data Fattura</label>
+        <input type="text" [(ngModel)]="fatture.data" name="dataFattura" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="numeroFattura">Numero Fattura</label>
+        <input type="text" [(ngModel)]="fatture.numero" name="numeroFattura" class="form-control">
+    </div>
+    <div class="form-group col-md-2">
+        <label for="tipo">Stato</label>
+        <select class="p-2" name="tipo" [(ngModel)]="fatture.stato" [ngModelOptions]="{standalone: true}">
+            <option [ngValue]="item" *ngFor="let item of statoFattura">
+                {{item.nome}}
+            </option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-success" (click)="salva()" >Salva</button>
+    </div>
+</form>

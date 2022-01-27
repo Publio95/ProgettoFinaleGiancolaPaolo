@@ -6,6 +6,7 @@ import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
 import { AddProvinciaComponent } from './add-provincia/add-provincia.component';
 import { Detailfatture2Component } from './detailfatture2/detailfatture2.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
+import { EditFattureComponent } from './edit-fatture/edit-fatture.component';
 import { EditPersoneComponent } from './edit-persone/edit-persone.component';
 import { HomeComponent } from './home/home.component';
 import { TabClientiComponent } from './tab-clienti/tab-clienti.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path:"fatture/detail/:id",
     component: Detailfatture2Component
+  },
+  {
+    path:"fattura/edit/:id",
+    component: EditFattureComponent
   }
  
  
