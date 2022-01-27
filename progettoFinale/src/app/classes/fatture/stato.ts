@@ -1,10 +1,10 @@
 export class Stato {
 
     id?: number;
-    stato!: string;
+    nome!: string;
 
     constructor(){
-        this.stato =  "PAGATA" 
+         
     }
 
 }

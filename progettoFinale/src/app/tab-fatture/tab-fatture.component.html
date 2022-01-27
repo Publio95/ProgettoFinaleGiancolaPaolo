@@ -18,12 +18,11 @@
         <td>{{item.numero}}</td>
         <td>{{item.anno}}</td>
         <td>{{item.importo}}</td>
-        <td>{{item.stato.stato}}</td>
+        <td>{{item.stato.nome}}</td>
         <td>{{item.cliente.cognomeContatto}}</td>
         <td>
           <button type="button" class="btn btn-danger btn-small mx-1" (click)="elimina(item)"><i class="bi bi-trash"></i></button>
-          <button type="button" class="btn btn-primary btn-small mx-1" (click)="dettaglioFattura(item)"><i
-              class="bi bi-zoom-in"></i></button>
+          <button type="button" class="btn btn-primary btn-small mx-1" (click)="dettaglioFattura(item)"><i class="bi bi-zoom-in"></i></button>
         </td>
       </tr>
     </tbody>

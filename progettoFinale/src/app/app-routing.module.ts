@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddComuneComponent } from './add-comune/add-comune.component';
+import { AddFatturaComponent } from './add-fattura/add-fattura.component';
 import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
 import { AddProvinciaComponent } from './add-provincia/add-provincia.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: "fatture",
     component: TabFattureComponent
+  },
+  {
+    path: "addFatture",
+    component: AddFatturaComponent
   }
  
 ];

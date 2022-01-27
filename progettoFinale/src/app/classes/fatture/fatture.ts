@@ -14,6 +14,7 @@ export class Fatture {
     constructor(){
         this.stato = new Stato;
         this.cliente = new Clienti;
+        this.data = "2019-07-31T16:09:43.763+00:00"
     }
 
 }

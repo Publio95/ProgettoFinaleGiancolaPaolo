@@ -25,6 +25,7 @@ export const environment = {
  
   fattureDettaglio: "http://epicode.online/epicodebeservice_v2/api/fatture/",
   fattureAdd: "http://epicode.online/epicodebeservice_v2/api/fatture",
+  fattureByStato:"http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
 
   production: false
 };

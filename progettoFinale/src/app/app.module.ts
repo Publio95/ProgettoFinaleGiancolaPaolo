@@ -17,6 +17,7 @@ import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
 import { AddProvinciaComponent } from './add-provincia/add-provincia.component';
 import { AddComuneComponent } from './add-comune/add-comune.component';
 import { TabFattureComponent } from './tab-fatture/tab-fatture.component';
+import { AddFatturaComponent } from './add-fattura/add-fattura.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { TabFattureComponent } from './tab-fatture/tab-fatture.component';
     AddNuovoComponent,
     AddProvinciaComponent,
     AddComuneComponent,
-    TabFattureComponent
+    TabFattureComponent,
+    AddFatturaComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Fatture } from '../classes/fatture/fatture';
+import { Stato } from '../classes/fatture/stato';
 import { IFatture } from '../interfaces/i-fatture';
+import { IStatoFatture } from '../interfaces/i-stato-fatture';
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +35,7 @@ export class FattureService {
   }
   
   getTipiFatture(){
-    return this.http.get<string[]>(environment.tipiCliente)
+    return this.http.get<IStatoFatture>(environment.fattureByStato)
   }
   
 
