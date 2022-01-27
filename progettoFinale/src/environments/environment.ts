@@ -6,7 +6,7 @@ export const environment = {
 
 
   clienti: "http://epicode.online/epicodebeservice_v2/api/clienti?page=0&size=20&sort=id,DESC",
-  fatture: "http://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,ASC",
+  fatture: "http://epicode.online/epicodebeservice_v2/api/fatture?page=0&size=20&sort=id,DESC",
   statoFatture: "http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
   province: "http://epicode.online/epicodebeservice_v2/api/province?page=0&size=20&sort=id,ASC",
   comuni: "http://epicode.online/epicodebeservice_v2/api/comuni?page=0&size=20&sort=id,ASC",
@@ -26,7 +26,7 @@ export const environment = {
   fattureDettaglio: "http://epicode.online/epicodebeservice_v2/api/fatture/",
   fattureAdd: "http://epicode.online/epicodebeservice_v2/api/fatture",
   fattureByStato:"http://epicode.online/epicodebeservice_v2/api/statifattura?page=0&size=20&sort=id,ASC",
-
+  fattureDettaglioInLista: "http://epicode.online/epicodebeservice_v2/api/fatture/cliente/",
   production: false
 };
 

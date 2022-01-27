@@ -6,6 +6,10 @@
         <h5 class="card-title">Pec: {{cliente.pec}}</h5>
         <h5 class="card-title">Indirizzo sede operativa: {{cliente.indirizzoSedeOperativa.via}}</h5>
         <h5 class="card-title">Indirizzo sede legale: {{cliente.indirizzoSedeLegale.via}}</h5>
-        <button type="button" class="btn btn-warning btn-small mx-1" (click)="modifica(cliente)"><i class="bi bi-pen">Modifica</i></button>
+        <h5 class="card-title">Fatture: <ul>
+            <li *ngFor="let item of fatture"> importo: {{item.importo}} € // numero Fattura: {{item.numero}}</li>
+        </ul></h5>
+        <button type="button" class="btn btn-warning btn-small mx-1" (click)="modifica(cliente)"><i class="bi bi-pen"> Modifica</i></button>
+        <button type="button" class="btn btn-danger btn-small mx-1" (click)="dettaglioFatture(cliente)"><i class="bi bi-card-list"> Fatture</i></button>
     </div>
   </div>

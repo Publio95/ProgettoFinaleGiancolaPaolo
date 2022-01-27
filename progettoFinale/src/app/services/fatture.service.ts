@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { Clienti } from '../classes/clienti/clienti';
 import { Fatture } from '../classes/fatture/fatture';
 import { Stato } from '../classes/fatture/stato';
 import { IFatture } from '../interfaces/i-fatture';
@@ -36,6 +37,10 @@ export class FattureService {
   
   getTipiFatture(){
     return this.http.get<IStatoFatture>(environment.fattureByStato)
+  }
+
+  getFattureByClient(item: Clienti){
+    return this.http.get<IFatture>(environment.fattureDettaglioInLista +item.id+ '?page=0&size=20&sort=id,ASC')
   }
   
 
