@@ -19,8 +19,9 @@ export class TabFattureComponent implements OnInit {
   }
 
   elimina(item: Fatture){
-
-  }
+    this.fattureServices.eliminaFatture(item.id).subscribe(data => {
+      console.log(data)}
+    )}
 
 dettaglioFattura(item: Fatture){
   this.router.navigate(['fatture/detail/', item.id])
