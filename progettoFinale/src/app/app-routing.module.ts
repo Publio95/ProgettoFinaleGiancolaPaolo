@@ -4,6 +4,7 @@ import { AddComuneComponent } from './add-comune/add-comune.component';
 import { AddFatturaComponent } from './add-fattura/add-fattura.component';
 import { AddNuovoComponent } from './add-nuovo/add-nuovo.component';
 import { AddProvinciaComponent } from './add-provincia/add-provincia.component';
+import { DetailFattureComponent } from './detail-fatture/detail-fatture.component';
 import { DettaglioClienteComponent } from './dettaglio-cliente/dettaglio-cliente.component';
 import { EditPersoneComponent } from './edit-persone/edit-persone.component';
 import { HomeComponent } from './home/home.component';
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: "addFatture",
     component: AddFatturaComponent
+  },
+  {
+    path: "fatture/detail/:id",
+    component: DetailFattureComponent
   }
  
 ];

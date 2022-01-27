@@ -23,6 +23,7 @@ export class TabFattureComponent implements OnInit {
   }
 
 dettaglioFattura(item: Fatture){
+  this.router.navigate(['fatture/detail/', item.id])
 
 }
 
