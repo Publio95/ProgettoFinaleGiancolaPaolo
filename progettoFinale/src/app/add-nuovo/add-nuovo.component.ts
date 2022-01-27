@@ -43,4 +43,9 @@ aggiungi(){
 addProvincia(){
   this.router.navigate(['addProvincia'])
 }
+
+addComune(){
+  this.router.navigate(['addComune'])
+}
+
 }
